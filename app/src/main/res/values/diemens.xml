@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="frame_value">20dp</dimen>
+    <dimen name="adduser_image_size">150dp</dimen>
+    <dimen name="et_top_margin">30dp</dimen>
+    <dimen name="et_text_size">20dp</dimen>
+    <dimen name="rc_view_padding">3dp</dimen>
+</resources>

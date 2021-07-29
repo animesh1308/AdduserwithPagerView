@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AdduserwithPagerView</string>
+    <string name="add_user_button">Save</string>
+    <string name="use_added">Added successfully!!</string>
+    <string name="usr_add_error_msg">Every field is mandatory!!</string>
+    <string name="name_missing_warning">Required a Name!!</string>
+    <string name="mobno_missing_warning">Required a mobile number!!</string>
+    <string name="dob_missing_warning">Date of Birth is missing !!</string>
+    <string name="gen_missing_warning">Gender is missing!!</string>
+    <string-array name="spinner_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>TransGender</item>
+    </string-array>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_user_fragment"
+    android:background="@drawable/backgroud_drawable">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/add_user_scrollview"
+        android:layout_above="@+id/bt_add_usr"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/frame_value"
+        android:layout_marginBottom="@dimen/frame_value"
+        android:layout_marginRight="@dimen/frame_value"
+        android:layout_marginLeft="@dimen/frame_value"
+        android:id="@+id/add_user_frame"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/etadd_user_image"
+            android:layout_width="@dimen/adduser_image_size"
+            android:layout_height="@dimen/adduser_image_size"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_marginTop="@dimen/et_top_margin"
+            android:layout_centerHorizontal="true"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/image_border_color"
+            />
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etfrg_addusr_name"
+            android:layout_below="@+id/etadd_user_image"
+            android:layout_marginTop="@dimen/et_top_margin"
+            android:hint="User name"
+            android:textSize="@dimen/et_text_size"
+            android:background="@drawable/edittext_design"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etfrg_addusr_mobile"
+            android:layout_below="@+id/etfrg_addusr_name"
+            android:layout_marginTop="@dimen/et_top_margin"
+            android:hint="Cell phone no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="@dimen/et_text_size"
+            android:background="@drawable/edittext_design"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etfrg_addusr_dob"
+            android:layout_below="@+id/etfrg_addusr_mobile"
+            android:layout_marginTop="@dimen/et_top_margin"
+            android:hint="D.O.B"
+            android:textSize="@dimen/et_text_size"
+            android:background="@drawable/edittext_design"
+            />
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etfrg_addusr_dob"
+            android:id="@+id/etspfrg_add_usr"
+            />
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_add_usr"
+        android:text="@string/add_user_button"
+        android:layout_alignParentBottom="true"
+        android:background="@color/button_color"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/frame_value"
+        android:layout_marginRight="@dimen/frame_value"
+        android:layout_marginBottom="@dimen/frame_value"
+        />
+
+</RelativeLayout>
